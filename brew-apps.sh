@@ -8,6 +8,7 @@ google-chrome
 iterm2
 raycast
 visual-studio-code
+alt-tab
 )
 for app in ${apps[@]}; do
     echo brew install --cask $app

@@ -1,5 +1,5 @@
 FROM alpine
-RUN apk add -U python3 py3-pip curl git zsh sudo && \
+RUN apk add -U python3 py3-pip curl git zsh sudo tmux && \
     adduser -D -s /bin/zsh kiran && \
     echo "kiran ALL=(ALL:ALL) NOPASSWD: ALL" >> /etc/sudoers
 USER kiran
