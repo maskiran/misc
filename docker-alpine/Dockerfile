@@ -1,5 +1,5 @@
 FROM alpine
-RUN apk add -U python3 py3-virtualenv vim curl git zsh sudo tmux tzdata
+RUN apk add -U python3 py3-virtualenv iproute2 vim curl git zsh sudo tmux tzdata
 RUN adduser -D -s /bin/zsh kiran && \
     echo "kiran ALL=(ALL:ALL) NOPASSWD: ALL" >> /etc/sudoers && \
     ln -s /usr/share/zoneinfo/US/Pacific /etc/localtime
