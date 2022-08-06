@@ -1,17 +1,17 @@
 # Info
-Alpine container image with python3, virtualenv, sudo, curl, zsh
+Ubuntu container image with python3, virtualenv, sudo, curl, zsh
 local user kiran added with sudo access
 oh-my-zsh for the local user
 start the container as local user in the user's home directory
-create a virtualenv and set the path to it
+create a python virtualenv in the localuser and set path to that
 
 # Build
 ```
-docker build -t a .
+docker build -t u .
 ```
 
 # Run
 ```
-docker run -it --rm a
+docker run -it --rm u
 ```
 
