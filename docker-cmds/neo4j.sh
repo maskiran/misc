@@ -1,5 +1,3 @@
-## neo4j
-```
 docker run --name neo4j \
     -p 7474:7474 -p 7687:7687 \
     -d \
@@ -9,4 +7,3 @@ docker run --name neo4j \
     -v $HOME/ctrdata/neo4j/plugins:/plugins \
     --env NEO4J_AUTH=neo4j/test \
     neo4j
-```
