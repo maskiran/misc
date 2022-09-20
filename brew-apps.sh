@@ -1,23 +1,34 @@
 apps=(
 1password
 adobe-creative-cloud
-alfred
+#alfred
+#alt-tab
+amazon-chime
 docker
 firefox
 google-chrome
 iterm2
+macvim
+microsoft-teams
 raycast
 visual-studio-code
-alt-tab
+wireshark
 )
 for app in ${apps[@]}; do
     echo brew install --cask $app
 done
 
 formulae=(
+awscli
+azure-cli
 bat
-node
+dog
+golang
+google-cloud-sdk
+ipcalc
 jq
+node
+terraform
 the_silver_searcher
 )
 for app in ${formulae[@]}; do
