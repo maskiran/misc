@@ -1,5 +1,5 @@
 sudo yum update -y
-sudo yum install -y zsh git util-linux-user
+sudo yum install -y zsh git util-linux-user python3.12
 curl -o ohmyzsh.sh -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh
 bash ohmyzsh.sh --unattended
 rm ohmyzsh.sh

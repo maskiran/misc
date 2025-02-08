@@ -37,6 +37,7 @@ fi
 
 limactl create --name $NAME --tty=false template://$OS-$VERSION
 limactl start $NAME
+limactl shell $NAME sudo hostnamectl hostname $NAME
 OS_SETUP_SCRIPT=https://raw.githubusercontent.com/maskiran/misc/refs/heads/main/$OS-setup.sh
 limactl shell --workdir . $NAME curl -o setup.sh -fsSL $OS_SETUP_SCRIPT
 limactl shell --workdir . $NAME bash setup.sh
