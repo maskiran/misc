@@ -1,4 +1,4 @@
-NAME=u241
+NAME=u24
 OS=ubuntu-24.04
 
 limactl create --name $NAME --tty=false template://$OS
